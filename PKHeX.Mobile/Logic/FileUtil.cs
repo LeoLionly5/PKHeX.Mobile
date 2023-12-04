@@ -114,7 +114,7 @@ namespace PKHeX.Mobile.Logic
 #pragma warning restore CA1031 // Do not catch general exception types
             {
                 await UserDialogs.Instance.AlertAsync($"Failed to access \"" + outputFolder + "\" please grant All File Access Special Permision").ConfigureAwait(false);
-                //await UserDialogs.Instance.AlertAsync($"Failed: {ex}").ConfigureAwait(false);
+                await UserDialogs.Instance.AlertAsync($"Failed: {ex}").ConfigureAwait(false);
                 return false;
             }
         }
